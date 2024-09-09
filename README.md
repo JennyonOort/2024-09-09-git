@@ -1,4 +1,4 @@
-# 2024-09-09-git 
+# 2024-09-09-git: history and conflicts
 
 `git add .` 
 - add all files in the current working directory
@@ -24,3 +24,7 @@
 `git log`
 - if the log runs off your screen, press `q`
 - `git log --oneline`: show you the oneline version of `git log`
+
+Make a change to the same in both locations:
+- `git config pull.rebase false #merge` select if asked
+- should have already been set up in installation
