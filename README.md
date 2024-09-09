@@ -30,3 +30,8 @@ Make a change to the same file in both locations:
 - if the changes are in separate locations of the file, first git pull from remote to merge conflicts 
 - if the changes are in the same location of the file, git pull will result in automatic merge conflict, need to fix file locally first then git add, commit, and push
 - `git merge --abort` to abort the merge
+
+`.gitignore` file
+- type `.ipynb_checkpoints` in the file and this checkpoint file will be ignored
+- can google 'python gitignore' or 'r gitignore' for a list of common files that should be ignored
+- general rule of thumb: any file that is generated over the course of projet shoudl be ignored
