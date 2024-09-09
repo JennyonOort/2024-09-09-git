@@ -1,4 +1,4 @@
-# 2024-09-09-git: history and conflicts
+# 2024-09-09-git: History and Conflicts
 
 `git add .` 
 - add all files in the current working directory
@@ -25,6 +25,8 @@
 - if the log runs off your screen, press `q`
 - `git log --oneline`: show you the oneline version of `git log`
 
-Make a change to the same in both locations:
-- `git config pull.rebase false #merge` select if asked
-- should have already been set up in installation
+Make a change to the same file in both locations:
+- `git config pull.rebase false #merge` select if asked; should have already been set up in installation
+- if the changes are in separate locations of the file, first git pull from remote to merge conflicts 
+- if the changes are in the same location of the file, git pull will result in automatic merge conflict, need to fix file locally first then git add, commit, and push
+- `git merge --abort` to abort the merge
